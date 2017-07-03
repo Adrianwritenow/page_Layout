@@ -145,10 +145,11 @@ header{
 }
 #sidebar_content {
   display: block;
-  margin-top: 10px;
+  margin-top: 2px;
+  background-color: white;
 }
 #sidebar_content div{
-  margin-top: 10px;
+  background-color: #ffffdd;
 }
 #site_footer>nav a {
 margin-left: 10px;
