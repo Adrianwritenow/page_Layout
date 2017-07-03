@@ -46,11 +46,15 @@ a:hover{
     color: blue;
 }
 
-header{ 
+header{
+  display: flex;
     padding-bottom: 15px;
     margin-bottom: 20px;
     border-bottom: 2px solid #ddddff;
+    justify-content: space-between;
+
 }
+
 
 #site_container{
     padding: 20px;
@@ -62,17 +66,110 @@ header{
 }
 
 #main_nav{
-    text-align: center;
+  margin-top: 20px;
+  flex-basis: 70%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 #main_nav a{
+  flex-basis: 33%;
+  margin-right: 5px;
     display: block;
-    padding: 10px 2%;
+    padding: 10px 40px;
     background: #ffdddd;
-    margin-bottom: 5px;
+    margin-bottom: auto;
     border-radius: 5px;
 }
 
 #main_nav a:hover{
     background: #ddddff;
+}
+#main_content{
+display: flex;
+background-color: #ddffff;
+justify-content: center;
+}
+#main_content div{
+  flex-basis:60%;
+}
+#main_content div:nth-of-type(2){
+  flex-basis: 30%;
+}
+#sidebar_content{
+  margin-top: 10px;
+
+  display: flex;
+  background-color:#ffffdd;
+
+}
+#sidebar_content div{
+  flex-basis: 33%;
+
+
+}
+#site_footer{
+  margin-top: 10px;
+  justify-content: center;
+
+
+}
+#site_footer nav{
+  display: flex;
+  background-color:#ffe2a0;
+justify-content: center;
+padding: 10px;
+}
+#site_footer>nav a {
+  margin-left: 40px;
+
+}
+@media screen and ( max-width: 600px ){
+  #logo{
+text-align: center;
+}
+
+header{
+  display: block;
+}
+#main_nav{
+    display: block;
+}
+#main_nav a {
+  display:block;
+  margin-top: 5px;
+}
+#main_content{
+  display: block;
+}
+#sidebar_content {
+  display: block;
+  margin-top: 10px;
+}
+#sidebar_content div{
+  margin-top: 10px;
+}
+#site_footer>nav a {
+margin-left: 10px;
+}
+
+
+
+}
+
+@media screen and ( max-width: 900px ){
+  #site_container{
+margin-left: 20px;
+margin-right: 20px;
+}
+
+header{
+  display: block;
+}
+#main_content{
+  display: block;
+}
+
+
 }
